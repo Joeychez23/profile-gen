@@ -10,7 +10,7 @@ function createTeamHTML(team) {
                             <h4>${manager.name}</h4>
                         </div>
                         <div class="imgBox">
-                            <div id="mImg" class="img"></div><h5 class="jTitle">${manager.role}</h5>
+                            <div class="img mImg"></div><h5 class="jTitle">${manager.role}</h5>
                         </div>
                     </div>
                     <div class="dataBox">
@@ -34,7 +34,7 @@ function createTeamHTML(team) {
                             <h4>${engineer.name}</h4>
                         </div>
                         <div class="imgBox">
-                            <div id="eImg" class="img"></div><h5 class="jTitle">${engineer.role}</h5>
+                            <div class="img eImg"></div><h5 class="jTitle">${engineer.role}</h5>
                         </div>
                     </div>
                     <div class="dataBox">
@@ -62,7 +62,7 @@ function createTeamHTML(team) {
                             <h4>${intern.name}</h4>
                         </div>
                         <div class="imgBox">
-                            <div id="iImg" class="img"></div><h5 class="jTitle">${intern.role}</h5>
+                            <div class="img iImg"></div><h5 class="jTitle">${intern.role}</h5>
                         </div>
                     </div>
                     <div class="dataBox">

@@ -57,14 +57,14 @@ header {
     width: 20%;
 }
 
-#mImg {
+.mImg {
     background-image: url(../images/1.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: center;
 }
 
-#eImg {
+.eImg {
     background-image: url(../images/2.jpg);
     background-repeat: none;
     background-size: cover;
@@ -72,7 +72,7 @@ header {
     background-color: transparent
 }
 
-#iImg {
+.iImg {
     background-image: url(../images/3.jpg);
     background-repeat: none;
     background-size: cover;

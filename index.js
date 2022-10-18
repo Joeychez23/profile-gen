@@ -327,7 +327,7 @@ async function createTeam() {
   }
 
   if (currEmp.role == "Exit") {
-    fs.writeFile("./test.html", renderHTML(team), "UTF-8", function (err) {
+    fs.writeFile("./index.html", renderHTML(team), "UTF-8", function (err) {
       if (err) {
         console.log(err);
         return;
