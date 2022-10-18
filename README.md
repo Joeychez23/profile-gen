@@ -23,7 +23,7 @@ This code creates a "team" of employees. The algorithm takes user inputs on the 
 
 ## Usage
 
-1. run "npm start" or "node index.js" begin
+1. run "npm start" or "node index.js" in terminal to begin
 2. fill in the required input
 3. once in the menu press exit to render the new html contents to the file
 4. load the index.html to see the results
