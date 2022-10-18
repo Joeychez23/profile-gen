@@ -29,9 +29,11 @@ This code creates a "team" of employees. The algorithm takes user inputs on the 
 4. load the index.html to see the results
 
 ## Output
+Link: https://drive.google.com/file/d/1HE9M1_yFZKUcz-E7DWox6G9ZojA3AGCI/view
 
 <video width="100%" src="./public/video/video.webm" controls>
 </video>
+
 
 ## Contributors
 
