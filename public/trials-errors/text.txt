@@ -1,0 +1,367 @@
+//Write the base html
+/*
+function createFile() {
+  fs.writeFile(
+    "./public/test.html",
+    `<!DOCTYPE html>
+      <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+          <head>
+              <meta charset="utf-8" />
+              <meta http-equiv="X-UA-Compatible" content=" IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Basic</title>
+              <!--jquery CDN-->
+              <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+              <!--jquery code-->
+              <script>
+                  $(document).ready(function() {});
+              </script>
+              <!--stylesheet link-->
+              <link href= "./public/stylesheets/resetstylesheet.css" type= "text/css" rel= "stylesheet">
+              <link href= "./public/stylesheets/style.css" type= "text/css" rel= "stylesheet">
+              <!--bootstrap CDN-->
+              <!-- CSS only -->
+              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+              <!-- JavaScript Bundle with Popper -->
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+          </head>
+          <body>
+              <header>
+                  <h2>My Team</h2>
+              </header>
+              <div id="content" class= "container-fluid">
+                  <div id="teamBox" class= "container-fluid">`,
+    function (err) {
+      if (err) {
+        console.log(err);
+        return;
+      }
+      console.log("Added");
+    }
+  );
+}
+*/
+
+let check = false;
+let setMan = true;
+//Sets templates to the .html file
+/*
+
+function setManager(manager) {
+  fs.appendFile(
+      "./public/test.html",
+      `\n\t\t\t\t\t<div class="testBox">
+      \t\t\t\t<div class="nameTitle">
+      \t\t\t\t\t<div class="nameBox">
+      \t\t\t\t\t\t<h4>${manager.name}</h4>
+      \t\t\t\t\t\t</div>
+      \t\t\t\t\t\t<div class="imgBox">
+      \t\t\t\t\t\t\t<div class="img"></div><h5 class="jTitle">${manager.role}</h5>
+      \t\t\t\t\t\t</div>
+      \t\t\t\t\t</div>
+      \t\t\t\t\t<div class="dataBox">
+      \t\t\t\t\t\t<div class="valBox">ID: ${manager.id}</div>
+      \t\t\t\t\t\t<div class="valBox">Email: ${manager.email}</div>
+      \t\t\t\t\t\t<div class="valBox">Office number: ${manager.offices}</div>
+      \t\t\t\t\t</div>
+      \t\t\t\t</div>`,
+    function (err) {
+      if (err) {
+        console.log(err);
+        return;
+      }
+    }
+  )
+}
+
+
+
+
+
+function setEngineer(engineer) {
+  fs.appendFile(
+      "./public/test.html",
+      `\n\t\t\t\t\t<div class="testBox">
+      \t\t\t\t<div class="nameTitle">
+      \t\t\t\t\t\t<div class="nameBox">
+      \t\t\t\t\t\t\t<h4>${engineer.name}</h4>
+      \t\t\t\t\t\t</div>
+      \t\t\t\t\t\t<div class="imgBox">
+      \t\t\t\t\t\t\t<div class="img"></div><h5 class="jTitle">${engineer.role}</h5>
+      \t\t\t\t\t\t</div>
+      \t\t\t\t\t</div>
+      \t\t\t\t\t<div class="dataBox">
+      \t\t\t\t\t\t<div class="valBox">ID: ${engineer.id}</div>
+      \t\t\t\t\t\t<div class="valBox">Email: ${engineer.email}</div>
+      \t\t\t\t\t\t<div class="valBox">Github: ${engineer.github}</div>
+      \t\t\t\t\t</div>
+      \t\t\t\t</div>`,
+    function (err) {
+      if (err) {
+        console.log(err);
+        return;
+      }
+    }
+  );
+}
+
+
+
+
+
+
+
+
+
+function setIntern(intern) {
+  fs.appendFile(
+      "./public/test.html",
+      `\n\t\t\t\t\t<div class="testBox">
+      \t\t\t\t<div class="nameTitle">
+      \t\t\t\t\t\t<div class="nameBox">
+      \t\t\t\t\t\t\t<h4>${intern.name}</h4>
+      \t\t\t\t\t\t</div>
+      \t\t\t\t\t\t<div class="imgBox">
+      \t\t\t\t\t\t\t<div class="img"></div><h5 class="jTitle">${intern.role}</h5>
+      \t\t\t\t\t\t</div>
+      \t\t\t\t\t</div>
+      \t\t\t\t\t<div class="dataBox">
+      \t\t\t\t\t\t<div class="valBox">ID: ${intern.id}</div>
+      \t\t\t\t\t\t<div class="valBox">Email: ${intern.email}</div>
+      \t\t\t\t\t\t<div class="valBox">School: ${intern.school}</div>
+      \t\t\t\t\t</div>
+      \t\t\t\t</div>`,
+    function (err) {
+      if (err) {
+        console.log(err);
+        return;
+      }
+    }
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function setTemplates(team) {
+  let count = 0;
+  let managers = new Array();
+  let engineers = new Array();
+  let interns = new Array();
+  for (let i = 0; i < team.length; i++) {
+    if (team[i].role == "Manager") {
+      managers.push(team[i]);
+    }
+    if (team[i].role == "Engineer") {
+      engineers.push(team[i]);
+    }
+    if (team[i].role == "Intern") {
+      interns.push(team[i]);
+    }
+  }
+  console.log(managers);
+  console.log(engineers);
+  console.log(interns);
+  console.log(team.length);
+  for (let i = 0; i < managers.length; i++) {
+    count += 1;
+    setManager(managers[i]);
+    if(count == team.length) {
+      check = true;
+    }
+    console.log(`M ${count}`);
+  }
+  for (let i = 0; i < engineers.length; i++) {
+    setEngineer(engineers[i]);
+    count += 1;
+    if(count == team.length) {
+      //await endHTML();
+      check = true;
+    }
+    console.log(`E ${count}`);
+  }
+  for (let i = 0; i < interns.length; i++) {
+    setIntern(interns[i]);
+    count += 1;
+    if(count == team.length) {
+      check = true
+    }
+    console.log(`I ${count}`);
+  }
+
+  return
+
+}
+
+//Ends html
+function endHTML() {
+  fs.appendFile(
+    "./public/test.html",
+    `\n\t\t\t\t\t</div>
+    \t\t\t</div>
+    \t\t</body>
+
+<!--JavaScript link-->
+
+<script src="index.js"></script>
+
+
+</html>`,
+    function (err) {
+      if (err) {
+        console.log(err);
+        return;
+      }
+    }
+  );
+}
+
+*/
+
+
+/*
+function setTemplates(team) {
+  let count = 0;
+  let managers = new Array();
+  let engineers = new Array();
+  let interns = new Array();
+  for (let i = 0; i < team.length; i++) {
+    if (team[i].role == "Manager") {
+      managers.push(team[i]);
+    }
+    if (team[i].role == "Engineer") {
+      engineers.push(team[i]);
+    }
+    if (team[i].role == "Intern") {
+      interns.push(team[i]);
+    }
+  }
+  console.log(managers);
+  console.log(engineers);
+  console.log(interns);
+  console.log(team.length);
+  for (let i = 0; i < managers.length; i++) {
+    count += 1;
+    setManager(managers[i]);
+    if(count == team.length) {
+      check = true;
+    }
+    console.log(`M ${count}`);
+  }
+  for (let i = 0; i < engineers.length; i++) {
+    setEngineer(engineers[i]);
+    count += 1;
+    if(count == team.length) {
+      //await endHTML();
+      check = true;
+    }
+    console.log(`E ${count}`);
+  }
+  for (let i = 0; i < interns.length; i++) {
+    setIntern(interns[i]);
+    count += 1;
+    if(count == team.length) {
+      check = true
+    }
+    console.log(`I ${count}`);
+  }
+
+  return
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+    function setManager(manager) {
+        return `
+<div class="testBox">
+    <div class="nameTitle">
+        <div class="nameBox">
+            <h4>${manager.name}</h4>
+        </div>
+        <div class="imgBox">
+            <div class="img"></div><h5 class="jTitle">${manager.role}</h5>
+        </div>
+    </div>
+    <div class="dataBox">
+        <div class="valBox">ID: ${manager.id}</div>
+        <div class="valBox">Email: ${manager.email}</div>
+        <div class="valBox">Office number: ${manager.offices}</div>
+    </div>
+</div>
+    `  
+    }
+    
+    
+    
+    
+    
+    function setEngineer(engineer) {
+        return `
+<div class="testBox">
+    <div class="nameTitle">
+        <div class="nameBox">
+            <h4>${engineer.name}</h4>
+        </div>
+        <div class="imgBox">
+            <div class="img"></div><h5 class="jTitle">${engineer.role}</h5>
+        </div>
+    </div>
+    <div class="dataBox">
+        <div class="valBox">ID: ${engineer.id}</div>
+        <div class="valBox">Email: ${engineer.email}</div>
+        <div class="valBox">Github: ${engineer.github}</div>
+    </div>
+</div>
+    `  
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    function setIntern(intern) {
+        return `
+<div class="testBox">
+    <div class="nameTitle">
+        <div class="nameBox">
+            <h4>${intern.name}</h4>
+        </div>
+        <div class="imgBox">
+            <div class="img"></div><h5 class="jTitle">${intern.role}</h5>
+        </div>
+    </div>
+    <div class="dataBox">
+        <div class="valBox">ID: ${intern.id}</div>
+        <div class="valBox">Email: ${intern.email}</div>
+        <div class="valBox">School: ${intern.school}</div>
+    </div>
+</div>
+    `  
+    };

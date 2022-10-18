@@ -1,0 +1,108 @@
+header {
+    display: flex;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    color: white;
+}
+
+#content {
+    display: flex;
+    /*border: solid 5px green;*/
+}
+
+#teamBox {
+    display: flex;
+    /*border: solid 4px orange;*/
+    margin: 5% 10%;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0% 7.5%;
+    padding-top: 30px;
+
+}
+
+.testBox {
+    background-color: #E8E8E8;
+    /*border: solid 2px red;*/
+    height: 250px;
+    width: 225px;
+    margin: 0% 2.6%;
+    margin-bottom: 2%;
+}
+
+.nameTitle {
+    color: white;
+    background-color: lightblue;
+}
+
+.nameBox {
+    /*border: solid 3px purple;*/
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+.imgBox {
+    display: flex;
+    justify-content: flex-start;
+    /*border: solid 3px tan;*/
+    padding: 1.5px;
+
+}
+
+.img {
+    /*background-color: blue;*/
+    width: 20%;
+}
+
+#mImg {
+    background-image: url(../images/1.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+}
+
+#eImg {
+    background-image: url(../images/2.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent
+}
+
+#iImg {
+    background-image: url(../images/3.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    background-color: transparent
+}
+
+.jTitle {
+    padding-top: 5px;
+    margin-left: 5px;
+}
+
+
+.dataBox {
+    margin-top: 20px;
+    padding: 5% 5%;
+    
+}
+
+.valBox {
+    display: flex;
+    overflow: hidden;
+    font-size: 12px;
+    padding: 5px;
+    padding-left: 15px;
+    background-color: white;
+    margin-bottom: 1%;
+    border-radius: 2px;
+}
+
+.valBox:hover {
+    overflow-x: auto;
+}
